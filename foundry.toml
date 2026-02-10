@@ -1,0 +1,31 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+
+solc_version = "0.8.28"
+
+
+fs_permissions = [
+    { access = "write", path = "./deployments" }
+]
+
+[profile.production]
+optimizer = true
+# 优化器: 运行次数 预期合约在部署后会被调用的次数 最大2^32-1
+optimizer-runs = 200
+# 使用中间表示
+via_ir = true
+
+[fuzz]
+runs = 1000
+max_test_rejects = 65536
+seed = "0x1234"
+
+[rpc_endpoints]
+local = "http://localhost:8545"
+sepolia = "${SEPOLIA_RPC_URL}"
+
+[etherscan]
+sepolia = { key = "${ETHERSCAN_API_KEY}"}
+

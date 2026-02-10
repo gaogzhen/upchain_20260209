@@ -1,0 +1,19 @@
+# Docs
+docs/
+
+# secret file
+.env
+.keys/
+
+# macos
+.DS_Store
+
+# vscode
+.vscode
+
+# foundry
+cache/
+out/
+lib/
+foundry.lock
+broadcast/

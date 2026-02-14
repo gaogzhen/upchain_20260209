@@ -11,10 +11,8 @@ contract Counter_1Script is BaseScript {
 
 
     function run() public broadcast {
+        saveAbi("Counter");
         counter = new Counter();
-        console.log("Counter deployed to:", address(counter));
         saveContract("Counter", address(counter));
-        counter.setNumber(1);
-        counter.increment();
     }
 }

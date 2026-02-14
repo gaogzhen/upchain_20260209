@@ -10,6 +10,8 @@ fs_permissions = [
     { access = "write", path = "./deployments" }
 ]
 
+# 仅在使用 script 内 FFI 导出 ABI 时需要: 运行 forge script script/ExportAbi.s.sol --ffi
+
 [profile.production]
 optimizer = true
 # 优化器: 运行次数 预期合约在部署后会被调用的次数 最大2^32-1

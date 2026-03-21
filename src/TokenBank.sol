@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.20;
+pragma solidity ^0.8.26;
 
 import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import {IPermit2} from "@permit2/src/interfaces/IPermit2.sol";
-import {ISignatureTransfer} from "@permit2/src/interfaces/ISignatureTransfer.sol";
+import {IPermit2} from "permit2/interfaces/IPermit2.sol";
+import {ISignatureTransfer} from "permit2/interfaces/ISignatureTransfer.sol";
 
 contract TokenBank {
     IERC20 public immutable token;

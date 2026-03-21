@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.13;
+pragma solidity ^0.8.26;
 
 import {BaseScript} from "./BaseScript.s.sol";
 import {ABIEncode} from "../src/ABIEncode.sol";

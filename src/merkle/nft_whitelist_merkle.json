@@ -1,0 +1,12 @@
+{
+  "description": "This JSON file contains the Merkle root for the whitelist of the WhitelistNFT contract. The Merkle root is used to verify that an address is part of the whitelist without revealing the entire list.",
+  "external_url": "https://example.com/whitelist",
+  "image": "https://natural-ivory-minnow.myfilebase.com/ipfs/QmbfrtbtViSCrLSE2qXzqKFswwvQumCURKJWY3qdRgK94Q",
+  "name": "Whitelist Merkle Root",
+  "attributes": [
+    {
+      "trait_type": "Merkle Root",
+      "value": "0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef"
+    }
+  ]
+}
